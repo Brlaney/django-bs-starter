@@ -11,8 +11,8 @@ def home(request):
     return render(request, 'pages/index.html', context)
 
 # Dynamic routing for navbar links
-# def navLink(request, slug):
-#     pages = Page.objects.all()
-#     page = Page.objects.get(slug=slug)
-#     context = {'pages': pages, 'page': page}
-#     return render(request, 'pages/navLink.html', context)
+def navLink(request, slug):
+    pages = Page.objects.all()
+    page = Page.objects.get(slug=slug)
+    context = {'pages': pages, 'page': page}
+    return render(request, 'pages/navLink.html', context)

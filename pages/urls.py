@@ -6,5 +6,5 @@ app_name = 'pages'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    # path('<str:slug>/', views.navLink, name='navLink'),
+    path('<str:slug>/', views.navLink, name='navLink'),
 ]
